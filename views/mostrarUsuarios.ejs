@@ -1,0 +1,32 @@
+<%- include("templates/encabezado")%>
+    <h1>Lista de usuarios</h1>
+    <div class="contenedor">
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Celular</th>
+                    <th>Correo</th>
+                    <th>Editar / Borrar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% usuariosCorrectos.forEach((usuario)=>{ %>
+                <tr class="hover">
+                    <td><%= usuario.id_usuario %></td>
+                    <td><%= usuario.nom_usuario %></td>
+                    <td><%= usuario.cel_usuario %></td>
+                    <td><%= usuario.correo_usuario %></td>
+                    <td>
+                        <a href="/editarUsuario/<%= usuario.id_usuario%>">Editar</a> / 
+                        <a href="/borrarUsuario/<%= usuario.id_usuario%>">Borrar</a>
+                    </td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+        <a href="/mostrarProductos"><button type="button">Ir a Productos</button></a>
+        <a href="/agregarUsuario"><button type="button">Agregar Usuarios</button></a>
+    </div>
+<%- include("templates/pie")%>

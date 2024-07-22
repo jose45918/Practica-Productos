@@ -1,0 +1,117 @@
+*  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Establecer una fuente global */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Formulario */
+form {
+    margin-top: 20px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(70, 130, 180, 0.8); /* SteelBlue Shadow */
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* Título */
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+}
+
+h1::selection {
+    color: #8a2be2; /* BlueViolet */
+}
+
+/* Contenedor */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Registro */
+.registro {
+    margin-top: 90px;
+}
+
+/* Etiquetas */
+label {
+    margin-top: 10px;
+}
+
+/* Inputs */
+input {
+    margin-bottom: 25px;
+    padding: 7px;
+    background-color: #e0f7fa; /* Light Cyan background */
+    border: none;
+    border-radius: 20px;
+    outline-color: #00bfff; /* DeepSkyBlue */
+    width: 80%;
+}
+
+/* Input específico */
+input .correo {
+    margin-bottom: 0;
+}
+
+/* Botón */
+button {
+    margin-top: 5px;
+    padding: 7px;
+    background-color: #4682b4; /* SteelBlue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+    transition: ease 0.5s;
+}
+
+button:hover {
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: transparent;
+    color: black;
+    border-color: #4682b4; /* SteelBlue */
+    box-shadow: 0 0 20px #4682b4; /* SteelBlue */
+}
+
+/* Errores */
+.error {
+    background-color: #ffc1c1; /* Light Pink */
+    border: 2px solid #ff4500; /* OrangeRed */
+}
+
+.circleCrossNombre, .circleCrossCelular, .circleCrossCorreo {
+    color: #a13434; /* Dark Red */
+}
+
+.ocultar {
+    visibility: hidden;
+}
+
+.mensajeNombre, .mensajeCelular, .mensajeCorreo {
+    color: #a13434; /* Dark Red */
+    font-size: small;
+}
+
+.circleCheckNombre, .circleCheckCelular, .circleCheckCorreo {
+    color: #00bfff; /* DeepSkyBlue */
+}
+
+.correcto {
+    background-color: #b0e0e6; /* PowderBlue */
+    border: 1px solid #4682b4; /* SteelBlue */
+}
